@@ -6,34 +6,53 @@
         <link rel="stylesheet" href="style.css" >
     </head>
 <body>
-    <header>
-        <img class="img1" src="eu.png" alt="Avatar de Arthur" >  
-   <h1 id="title" >Joguinhos e Dor nas Costas</h1>
-    </header>
-    <section>
-        <header>
-            <h2 class="subtitle">Joguinho de Junho.</h2>
-            <img class="img2" src="tr.jpg" alt="Banner de Terraria" >
-        </header>
-        <article class="post">
-            <header>
-                <h3 class="pstitle">Terraria</h3>
-            </header>
-            <p class="post-c">
-                Um jogo muito viciante.
-            </p>
-        </article>
-    </section>
-    <footer>
-        <ul class="listacont">
-            <li>
-                <a href="mailto:arthur1196.sales@gmail.com"> arthur1996.sales@gmail.com </a>
-            </li>
-            <li>
-                <a href="https://steamcommunity.com/profiles/76561198214811092/" target="_blank">Profile da Steam</a>
-            </li>
-        </ul>
-    </footer>
-   
+    <div class ="div1">
+        <!-- A .div1 possui a largura 100% para cobrir toda a página e a altura no 80vh como foi pedido a imagem 
+        foi apenas colocar a altura no auto, a largura 100% e o fit como fill. -->
+        <img class="img1" src ="banner.jpg"> 
+    </div>
+    <div class = "div2">
+         <!-- Aqui foi um pouco mais complicado, pois uma das imagens não respondia direito, tive que usar o flexbox e ir ajeitando
+    o tamanho da imagem do meio até ela ficar ok. -->
+            <div class ="box">
+                <a href="https://store.steampowered.com/app/105600/Terraria/" target="blank" > 
+                <img class ="terraria" src = "terraria.png">
+                </a>
+            </div>
+            <div class ="box">
+                <a href="https://store.steampowered.com/app/237930/Transistor/?l=portuguese" target="blank" > 
+                <img class ="transitor" src = "transistor.jpg">
+                </a>
+            </div>
+            <div class ="box">
+                <a href="https://m.apkpure.com/br/fate-grand-order-english/com.aniplex.fategrandorder.en" target="blank" > 
+                <img class= "fgo" src = "fgo.png"> 
+                </a>
+            </div>
+    </div>
+    <div class = "div3">
+
+            <div class = "conosco">
+                <h2 class ="t1">Fale Conosco</h2>
+                        <form>
+                            <label for = "nome">Nome:</label>
+                            <input type ="text" class="form-nome" id="nome" placeholder="Insira seu Nome" name="nome">
+                    
+                            <label for ="email">Email:</label>
+                            <input type ="email" class="form-email" id="email" placeholder="Insira seu Email" name="email">
+                            
+                            <label for ="text">Mensagem:</label>
+                            <input type ="text" class="form-text" id="text" placeholder="Insira sua Mensagem" name="text">
+                        </form>
+                        
+                    <div class = "botao">
+                        <button type="submit" class="buton">Enviar</button>
+                    </div>
+
+            </div>
+            
+
+
+    </div>
 </body>
 </html>
